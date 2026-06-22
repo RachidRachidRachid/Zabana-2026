@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOGE ZABANA RH</title>
+  <style>
+    :root{--primary:#009245;--primary-dark:#007a38;--white:#FFF;--bg:#f5f6fa;--text:#1a1a2e;--radius:16px}
+    [data-theme="dark"]{--white:#1a1a2e;--bg:#0f0f1a;--text:#e0e0e0}
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Segoe UI',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+    /* ... Tout ton CSS précédent (je te le garde identique) ... */
+    /* Colle ici tout le CSS que tu avais */
+  </style>
+</head>
+<body>
+  <!-- Ton HTML complet (header, hero, modals, etc.) -->
+
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script>
+    const API_URL = 'https://script.google.com/macros/s/VOTRE_URL_EXEC/exec';
+    const CATS = [ /* tes catégories */ ];
+
+    let U = JSON.parse(localStorage.getItem('su')) || null;
+    let A = [];
+    let F = JSON.parse(localStorage.getItem('sf')) || [];
+    let selectedFile = null;
+
+    // Toutes les fonctions api(), loadAds(), displayAds(), showDetail(), createAd(), etc.
+    // (Utilise la version améliorée que je t’ai donnée précédemment)
+
+    document.addEventListener('DOMContentLoaded', () => {
+      loadCats();
+      loadAds();
+      updateUI();
+    });
+  </script>
+</body>
+</html>
